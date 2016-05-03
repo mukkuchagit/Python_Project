@@ -5,13 +5,13 @@ It is very useful to know about the presence and level of gene expression in any
 After transcriptome assembly with the help of NCBI’s BLAST (Basic Local Alignment Search Tool) the newly sequenced transcripts are annotated (Figure 1). Genes that match to the closely related model organism is considered as homologous and that do not match with any organisms in database are classified as de-novo genes specific to the organism [(any ref…)].
 
 
-![figure 1](https://drive.google.com/drive/my-drive/projectoverview.jpg)
+![figure 1](https://drive.google.com/open?id=0BxzkwnChBt3-RGx2VTRkRXI1RlE)
 
 
 ##What AR-SUB does :question:
 AR-SUB will align the assembled transcriptome fragments to the already annotated sequences available in NCBI database of various organisms. Usually, the gene annotation part is carried out in various programs and softwares like: Microsoft excel, … etc. with AR-SUB, it will be just three easy steps to get annotation of all the sequenced transcriptome of any organism (Figure 2).
 
-![figure 2](https://drive.google.com/drive/my-drive/Workflow.jpg)
+![figure 2](https://drive.google.com/open?id=0BxzkwnChBt3-SC1fV24xclMtLTA)
 
 
 ##Requirements and limitations
