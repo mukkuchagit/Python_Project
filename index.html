@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Python_project by mukkuchagit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Python_project</h1>
+      <h2 class="project-tagline">Created by Maryam, Mukesh and Pramod</h2>
+      <a href="https://github.com/mukkuchagit/Python_Project" class="btn">View on GitHub</a>
+      <a href="https://github.com/mukkuchagit/Python_Project/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/mukkuchagit/Python_Project/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="annotation-of-rna-sequencing-data-using-blast--ar-sub-through-python" class="anchor" href="#annotation-of-rna-sequencing-data-using-blast--ar-sub-through-python" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Annotation of RNA sequencing data using BLAST  (AR-SUB) through Python</h1>
+
+<h2>
+<a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Introduction</h2>
+
+<p>It is very useful to know about the presence and level of gene expression in any biological sample at certain time. Modern technique, RNA sequencing (RNA-seq), has enabled us to achieve this task quite well. Through RNA-seq it has been easier to look at cells entire transcriptome. It has also enabled us to study about alternative gene spliced transcripts, post-transcriptional modifications, gene fusion, mutations/SNPs and changes in gene expression <a href="https://en.wikipedia.org/wiki/RNA-Seq">(wikipedia link)</a>. Another very important field where RNA-seq is used intensively is gene annotation or de-novo predictions <a href="http://bmcgenomics.biomedcentral.com/articles/10.1186/1471-2164-12-540">(Zhen et. al. 2011)</a>.
+After transcriptome assembly with the help of NCBI’s BLAST (Basic Local Alignment Search Tool) the newly sequenced transcripts are annotated (Figure 1). Genes that match to the closely related model organism is considered as homologous and that do not match with any organisms in database are classified as de-novo genes specific to the organism [(any ref…)].</p>
+
+<p><img src="https://drive.google.com/drive/my-drive/projectoverview.jpg" alt="figure 1"></p>
+
+<h2>
+<a id="what-ar-sub-does-question" class="anchor" href="#what-ar-sub-does-question" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What AR-SUB does <img class="emoji" title=":question:" alt=":question:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2753.png" height="20" width="20" align="absmiddle">
+</h2>
+
+<p>AR-SUB will align the assembled transcriptome fragments to the already annotated sequences available in NCBI database of various organisms. Usually, the gene annotation part is carried out in various programs and softwares like: Microsoft excel, … etc. with AR-SUB, it will be just three easy steps to get annotation of all the sequenced transcriptome of any organism (Figure 2).</p>
+
+<p><img src="https://drive.google.com/drive/my-drive/Workflow.jpg" alt="figure 2"></p>
+
+<h2>
+<a id="requirements-and-limitations" class="anchor" href="#requirements-and-limitations" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Requirements and limitations</h2>
+
+<p>As AR-SUB was created in Linux operating system and high performance computing (HPC) system, to run this script there are some prerequisites. </p>
+
+<ol>
+<li> Python version 3 or later are needed to run the program</li>
+<li> Most of the scripts use subprocess module so Linux OS is required </li>
+<li> As we are aligning to all the nucleotide database in NCBI, we need BLASTn installed (either in the personal computer hard disc or in the super computer). </li>
+<li> To make it perform faster HPC system is favored more.</li>
+<li> The program currently only accepts .<em>fasta</em> files as input to so BLAST and gives gene annotations in text (.txt) format.</li>
+<li> You need to run the program three times to get annotated genes from three stages (as shown in figure 2). </li>
+</ol>
+
+<p>Nevertheless, all these requirements are for the best performance so once they are met it is easy to get the output. Furthermore, as the input transcriptome assembly file is generally huge, the time consumed by the program to run will also be accordingly higher.</p>
+
+<h2>
+<a id="how-to-get-started--1" class="anchor" href="#how-to-get-started--1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to get started  <img class="emoji" title=":+1:" alt=":+1:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f44d.png" height="20" width="20" align="absmiddle">
+</h2>
+
+<ol>
+<li> First, create a folder designated only to work for the gene annotation in your computer or supercomputer (HPC). Start with copying your assembled transcriptome <em>fasta</em> file in to this folder.</li>
+<li> Download and move all files and scripts from the AR-SUB repository on GitHub into the folder you created in step 1. It is necessary to <strong>keep all these files in the same folder</strong> to run the program effectively!</li>
+<li> Download the file(s) of Refseq data of the organism(s) that you want to BLAST to (subject data). These will be used to create database files for BLAST.</li>
+<li>
+<p>Now, you are ready for the first BLAST (as in step 1 in figure 2)! In python interactive mode run the <em>final_script.py</em> file; this takes user inputs for the names of files in this order with a space in between:</p>
+
+<p>a. Name of the file to create database (<em>Drosophila</em> refseq in step 1 in figure 2)
+  b.    Name of input <em>fasta</em> file (query)
+  c.    Name of the file which you want to create for BLAST hits
+ d. Name of the file which you want to create for BLAST non-hits</p>
+</li>
+<li>
+<p>Relaunch the AR-SUB as in step 4 with following changes only in user inputs (as in step 2 in figure 2):</p>
+
+<p>a.    Name of the file to create database ( All insect refseq in step 1 in figure 2)
+  b.    Name of input <em>fasta</em> file (hit file from first BLAST run)
+  c.    Name of the file which you want to create for BLAST hits (will be input <em>fasta</em>     file for third BLAST)
+ d. Name of the file which you want to create for BLAST non-hits</p>
+</li>
+</ol>
+
+<h2>
+<a id="references" class="anchor" href="#references" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>References</h2>
+
+<ol>
+<li><p><a href="https://en.wikipedia.org/wiki/RNA-Seq">https://en.wikipedia.org/wiki/RNA-Seq</a></p></li>
+<li><p><a href="http://bmcgenomics.biomedcentral.com/articles/10.1186/1471-2164-12-540">Zhen L,  Zhonghua Z, Pengcheng Y, Sanwen H, Zhangjun F, Kui L  (2011) RNA-Seq improves annotation of protein-coding genes in the cucumber genome. BMC Genomics, 12:540.</a></p></li>
+</ol>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/mukkuchagit/Python_Project">Python_project</a> is maintained by <a href="https://github.com/mukkuchagit">mukkuchagit</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
