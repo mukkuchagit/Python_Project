@@ -40,13 +40,13 @@ Nevertheless, all these requirements are for the best performance, so once they 
 
 
 5.	Relaunch the AR-SUB as in step 4 with following changes only in user inputs (as in step 2 in figure 2):
-     * a.	Name of the file to create database ( All insect RefseqRNA in step 2 in Figure 2)
+     * a.	Name of the file to create database ( AllinsectRNARefseq.fasta in step 2 in Figure 2)
      * b.	Name of input *fasta* file (no-hit file from first BLAST run)
      * c.	Name of the file which you want to create for BLAST hits 
      * d.	Name of the file which you want to create for BLAST non-hits (will be input *fasta* file for third BLAST)
      
 6.	Relaunch the AR-SUB as in step 4 with following changes only in user inputs (as in step 3 in Figure 2):
-     * a.	Name of the file to create database ( All non-insect RefseqRNA in step 3 in Figure 2)
+     * a.	Name of the file to create database ( Allnon-insectRNARefseq.fasta in step 3 in Figure 2)
      * b.	Name of input *fasta* file (no-hit file from second BLAST run)
      * c.	Name of the file which you want to create for BLAST hits 
      * d.	Name of the file which you want to create for BLAST non-hits (which will be gene model for the organism)
