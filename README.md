@@ -50,6 +50,8 @@ Nevertheless, all these requirements are for the best performance, so once they 
      * b.	Name of input *fasta* file (no-hit file from second BLAST run)
      * c.	Name of the file which you want to create for BLAST hits 
      * d.	Name of the file which you want to create for BLAST non-hits (which will be gene model for the organism)
+     
+7.  Now, the files from first hit and second hit will be the annotations for the transcriptome, and third non-hit will be model genes specific to that organism.
 
 ##References 
 1.	[https://en.wikipedia.org/wiki/RNA-Seq](https://en.wikipedia.org/wiki/RNA-Seq)
