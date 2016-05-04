@@ -5,7 +5,7 @@ It is very useful to know about the presence and level of gene expression in any
 After transcriptome assembly with the help of NCBI’s BLAST (Basic Local Alignment Search Tool) the newly sequenced transcripts are annotated (Figure 1). Genes that match to the closely related model organism is considered as homologous and that do not match with any organisms in database are classified as model genes specific to that organism [(Koonin et al., 2003)](http://www.ncbi.nlm.nih.gov/books/NBK20255/).
 
 
-![figure 1](images/project_overview.jpg)
+![figure 1](images/project_overview1.jpg)
 
 
 ##What does AR-SUB do :question:
