@@ -5,13 +5,13 @@ It is very useful to know about the presence and level of gene expression in any
 After transcriptome assembly with the help of NCBI’s BLAST (Basic Local Alignment Search Tool) the newly sequenced transcripts are annotated (Figure 1). Genes that match to the closely related model organism is considered as homologous and that do not match with any organisms in database are classified as de-novo genes specific to the organism [(any ref…)].
 
 
-![figure 1](https://drive.google.com/file/d/0BxzkwnChBt3-RGx2VTRkRXI1RlE/view?usp=sharing)
+![figure 1](images/project_overview.jpg)
 
 
 ##What AR-SUB does :question:
-AR-SUB will align the assembled transcriptome fragments to the already annotated sequences available in NCBI database of various organisms. Usually, the gene annotation part is carried out in various programs and softwares like: Microsoft excel, … etc. with AR-SUB, it will be just three easy steps to get annotation of all the sequenced transcriptome of any organism (Figure 2).
+AR-SUB will align the assembled transcriptome fragments to the already annotated sequences available in NCBI database of various organisms. Usually, the gene annotation is done by running blast one at a time manually or doing it in Microsoft excel, which is also manual. So, it is hugely time consuming and error prone as well (as we do it manually). with AR-SUB, it will be just three easy steps to get annotation of all the sequenced transcriptome of any organism (Figure 2).
 
-![figure 2](https://drive.google.com/file/d/0BxzkwnChBt3-SC1fV24xclMtLTA/view?usp=sharing)
+![figure 2](images/Workflow.jpg)
 
 
 ##Requirements and limitations
@@ -32,7 +32,7 @@ Nevertheless, all these requirements are for the best performance so once they a
 1.	First, create a folder designated only to work for the gene annotation in your computer or supercomputer (HPC). Start with copying your assembled transcriptome *fasta* file in to this folder.
 2.	Download and move all files and scripts from the AR-SUB repository on GitHub into the folder you created in step 1. It is necessary to **keep all these files in the same folder** to run the program effectively!
 3.	Download the file(s) of Refseq data of the organism(s) that you want to BLAST to (subject data). These will be used to create database files for BLAST.
-4.	Now, you are ready for the first BLAST (as in step 1 in figure 2)! In python interactive mode run the *final_script.py* file; this takes user inputs for the names of files in this order with a space in between:
+4.	Now, you are ready for the first BLAST (as in step 1 in figure 2)! In python interactive mode run the *ar-sub_python.py* file; this takes user inputs for the names of files in this order with a space in between:
 
      a.	Name of the file to create database (*Drosophila* refseq in step 1 in figure 2)
       b.	Name of input *fasta* file (query)
