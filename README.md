@@ -6,12 +6,14 @@ After transcriptome assembly with the help of NCBI’s BLAST (Basic Local Alignm
 
 
 ![figure 1](images/project_overview.jpg)
+####Fig.1. Workflow of RNAseq data analysis. The figure focuses on annotation part using BLAST. Red window highlights the area of the workflow covered by AR-SUB program. The ultimate output will be final annotation file for the assembled contigs.
 
 
 ##What does AR-SUB do :question:
 AR-SUB will align the assembled transcriptome fragments to the already annotated sequences available in NCBI database of various organisms. Usually, the gene annotation is done by running blast one at a time manually or doing it in Microsoft excel, which is also manual. So, it is hugely time consuming and error prone as well (as we do it manually). with AR-SUB, it will be just three easy steps to get annotation of all the sequenced transcriptome of any organism (Figure 2).
 
 ![figure 2](images/Workflow.jpg)
+####Figure 2: Workflow of gene annotation using BLAST. As indicated in the figure we need to run BLAST three times to get the complete annotation.
 
 
 ##Requirements and limitations
