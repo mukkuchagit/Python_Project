@@ -5,7 +5,7 @@ It is very useful to know about the presence and level of gene expression in any
 Once we assemble transcriptome, with the help of NCBI’s BLAST (Basic Local Alignment Search Tool), the newly sequenced transcripts are then annotated (Figure 1). Genes that match to the closely related model organism is considered as homologous and that do not match with any organisms in database are classified as de-novo genes specific to the organism [(any ref…)].
 
 
-![Figure 1](images/project_overview.jpg)
+![Figure 1](images/project_overview1.jpg)
 Fig.1. Workflow of RNAseq data analysis. The figure focuses on annotation part using BLAST. Red window highlights the area of the workflow covered by AR-SUB program. The ultimate output will be final annotation file for the assembled contigs.
 
 
