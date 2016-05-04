@@ -33,19 +33,17 @@ Nevertheless, all these requirements are for the best performance so once they a
 2.	Download and move all files and scripts from the AR-SUB repository on GitHub into the folder you created in step 1. It is necessary to **keep all these files in the same folder** to run the program effectively!
 3.	Download the file(s) of Refseq data of the organism(s) that you want to BLAST to (subject data). These will be used to create database files for BLAST.
 4.	Now, you are ready for the first BLAST (as in step 1 in figure 2)! In python interactive mode run the *ar-sub_python.py* file; this takes user inputs for the names of files in this order with a space in between:
-
-     a.	Name of the file to create database (*Drosophila* refseq in step 1 in figure 2)
-      b.	Name of input *fasta* file (query)
-      c.	Name of the file which you want to create for BLAST hits
-     d.	Name of the file which you want to create for BLAST non-hits
+     * a.	Name of the file to create database (*Drosophila* refseq in step 1 in figure 2)
+     * b.	Name of input *fasta* file (query)
+     * c.	Name of the file which you want to create for BLAST hits
+     * d.	Name of the file which you want to create for BLAST non-hits
 
 
 5.	Relaunch the AR-SUB as in step 4 with following changes only in user inputs (as in step 2 in figure 2):
-
-      a.	Name of the file to create database ( All insect refseq in step 1 in figure 2)
-      b.	Name of input *fasta* file (hit file from first BLAST run)
-      c.	Name of the file which you want to create for BLAST hits (will be input *fasta*     file for third BLAST)
-     d.	Name of the file which you want to create for BLAST non-hits
+     * a.	Name of the file to create database ( All insect refseq in step 1 in figure 2)
+     * b.	Name of input *fasta* file (hit file from first BLAST run)
+     * c.	Name of the file which you want to create for BLAST hits (will be input *fasta* file for third BLAST)
+     * d.	Name of the file which you want to create for BLAST non-hits
  
 
 ##References 
