@@ -50,5 +50,4 @@ Nevertheless, all these requirements are for the best performance so once they a
 1.	[https://en.wikipedia.org/wiki/RNA-Seq](https://en.wikipedia.org/wiki/RNA-Seq)
 
 2. Koonin, E. V., & Galperin, M. Y. (2003). Evolutionary concept in genetics and genomics. In Sequence—Evolution—Function (pp. 25-49). Springer US.
-3. Li, Z., Zhang, Z., Yan, P., Huang, S., Fei, Z., & Lin, K. (2011). RNA-Seq improves annotation of protein-coding genes in the cucumber genome. BMC genomics, 12(1), 1.	
-
+3. [Li, Z., Zhang, Z., Yan, P., Huang, S., Fei, Z., & Lin, K. (2011). RNA-Seq improves annotation of protein-coding genes in the cucumber genome. BMC genomics, 12(1), 1.](http://bmcgenomics.biomedcentral.com/articles/10.1186/1471-2164-12-540)
