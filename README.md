@@ -31,23 +31,28 @@ Nevertheless, all these requirements are for the best performance so once they a
 
 1.	First, create a folder designated only to work for the gene annotation in your computer or high performance computing (HPC). Start with copying your assembled transcriptome *fasta* file in to this folder or give path .
 2.	Download and move all files and scripts from the AR-SUB repository on GitHub into the folder you created in step 1. It is necessary to **keep all these files in the same folder** to run the program effectively!
-3.	Download the file(s) of Refseq data of the organism(s) that you want to BLAST to (subject data). These will be used to create database files for BLAST.
+3.	Download the file(s) of RefseqRNA data of the organism(s) that you want to BLAST to (subject data). These will be used to create database files for BLAST.
 4.	Now, you are ready for the first BLAST (as in step 1 in figure 2)! In python interactive mode run the *ar-sub_python.py* file or submit as a *workq* job if you are working in HPC; this takes user inputs for the names of files in this order with a space in between:
-     * a.	Name of the file to create database (*Drosophila* refseq in step 1 in figure 2)
+     * a.	Name of the file to create database (*Drosophila* RefseqRNA in step 1 in Figure 2)
      * b.	Name of input *fasta* file (query)
      * c.	Name of the file which you want to create for BLAST hits
-     * d.	Name of the file which you want to create for BLAST non-hits
+     * d.	Name of the file which you want to create for BLAST non-hits (will be input *fasta* file for second BLAST)
 
 
 5.	Relaunch the AR-SUB as in step 4 with following changes only in user inputs (as in step 2 in figure 2):
-     * a.	Name of the file to create database ( All insect refseq in step 1 in figure 2)
-     * b.	Name of input *fasta* file (hit file from first BLAST run)
-     * c.	Name of the file which you want to create for BLAST hits (will be input *fasta* file for third BLAST)
-     * d.	Name of the file which you want to create for BLAST non-hits
- 
+     * a.	Name of the file to create database ( All insect RefseqRNA in step 2 in Figure 2)
+     * b.	Name of input *fasta* file (no-hit file from first BLAST run)
+     * c.	Name of the file which you want to create for BLAST hits 
+     * d.	Name of the file which you want to create for BLAST non-hits (will be input *fasta* file for third BLAST)
+     
+6.	Relaunch the AR-SUB as in step 4 with following changes only in user inputs (as in step 3 in figure 2):
+     * a.	Name of the file to create database ( All non-insect RefseqRNA in step 3 in Figure 2)
+     * b.	Name of input *fasta* file (no-hit file from second BLAST run)
+     * c.	Name of the file which you want to create for BLAST hits 
+     * d.	Name of the file which you want to create for BLAST non-hits (which will be gene model for the organism)
 
 ##References 
 1.	[https://en.wikipedia.org/wiki/RNA-Seq](https://en.wikipedia.org/wiki/RNA-Seq)
 
-2. Koonin, E. V., & Galperin, M. Y. (2003). Evolutionary concept in genetics and genomics. In Sequence—Evolution—Function (pp. 25-49). Springer US.
+2. [Koonin, E. V., & Galperin, M. Y. (2003). Evolutionary concept in genetics and genomics. In Sequence—Evolution—Function (pp. 25-49). Springer US.](http://www.ncbi.nlm.nih.gov/books/NBK20255/)
 3. [Li, Z., Zhang, Z., Yan, P., Huang, S., Fei, Z., & Lin, K. (2011). RNA-Seq improves annotation of protein-coding genes in the cucumber genome. BMC genomics, 12(1), 1.](http://bmcgenomics.biomedcentral.com/articles/10.1186/1471-2164-12-540)
