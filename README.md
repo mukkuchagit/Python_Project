@@ -2,17 +2,17 @@
 
 ##Introduction
 It is very useful to know about the presence and level of gene expression in any biological sample at certain time. Modern technique, RNA sequencing (RNA-seq), has enabled us to achieve this task quite well. Through RNA-seq it has been easier to look at cells entire transcriptome. It has also enabled us to study about alternative gene spliced transcripts, post-transcriptional modifications, gene fusion, mutations/SNPs and changes in gene expression [(wikipedia link)](https://en.wikipedia.org/wiki/RNA-Seq ). Another very important field where RNA-seq is used intensively is gene annotation or de-novo predictions [(Zhen et. al. 2011)](http://bmcgenomics.biomedcentral.com/articles/10.1186/1471-2164-12-540).
-After transcriptome assembly with the help of NCBI’s BLAST (Basic Local Alignment Search Tool) the newly sequenced transcripts are annotated (Figure 1). Genes that match to the closely related model organism is considered as homologous and that do not match with any organisms in database are classified as de-novo genes specific to the organism [(any ref…)].
+Once we assemble transcriptome, with the help of NCBI’s BLAST (Basic Local Alignment Search Tool), the newly sequenced transcripts are then annotated (Figure 1). Genes that match to the closely related model organism is considered as homologous and that do not match with any organisms in database are classified as de-novo genes specific to the organism [(any ref…)].
 
 
-![figure 1](images/project_overview.jpg)
+![Figure 1](images/project_overview.jpg)
 ########Fig.1. Workflow of RNAseq data analysis. The figure focuses on annotation part using BLAST. Red window highlights the area of the workflow covered by AR-SUB program. The ultimate output will be final annotation file for the assembled contigs.
 
 
 ##What does AR-SUB do :question:
 AR-SUB will align the assembled transcriptome fragments to the already annotated sequences available in NCBI database of various organisms. Usually, the gene annotation is done by running blast one at a time manually or doing it in Microsoft excel, which is also manual. So, it is hugely time consuming and error prone as well (as we do it manually). with AR-SUB, it will be just three easy steps to get annotation of all the sequenced transcriptome of any organism (Figure 2).
 
-![figure 2](images/Workflow.jpg)
+![Figure 2](images/Workflow.jpg)
 ########Figure 2: Workflow of gene annotation using BLAST. As indicated in the figure we need to run BLAST three times to get the complete annotation.
 
 
