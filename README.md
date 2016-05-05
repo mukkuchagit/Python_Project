@@ -82,7 +82,7 @@ Legend:
     nohit.fasta = no_hit_model_organism
 
 ######Screenshot of the folder containing all files created after running first BLAST:
-![screenshot after BLAST](images/screenshot_of_output_of_first_blast.jpg)
+![screenshot after BLAST](images/screenshot_of_output_of_first_blast1.jpg)
 
 ##References 
 1.	[https://en.wikipedia.org/wiki/RNA-Seq](https://en.wikipedia.org/wiki/RNA-Seq)
