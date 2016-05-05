@@ -94,7 +94,7 @@ def get_non_hit_model_organism(query_fasta_file, outfile, non_hit_after_model_bl
 def main():
     parse = argparse.ArgumentParser()
     parse.add_argument("input_file_to_creat_database", help="Give the " +
-                       "file path of the file you need to make database")
+                       "name of the file you need to make database")
     parse.add_argument("query_file", help="Give the fasta query file" +
                        " you want to blast with database")
         #I thought it will be easier to give a file than a messy list.
