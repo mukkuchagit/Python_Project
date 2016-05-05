@@ -79,11 +79,11 @@ optional arguments:
 ```
 Legend:
 
-ar_sub.py = python script file 
-drs.fasta = input_file_to_creat_database
-faw.fasta = query_file
-uniqhit = uniquehit_model_organism
-nohit.fasta = no_hit_model_organism
+    ar_sub.py = python script file
+    drs.fasta = input_file_to_creat_database
+    faw.fasta = query_file
+    uniqhit = uniquehit_model_organism
+    nohit.fasta = no_hit_model_organism
 
 
 ##References 
