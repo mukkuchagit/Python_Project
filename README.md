@@ -53,7 +53,7 @@ Nevertheless, all these requirements are for the best performance, so once they 
      
 7.  Now, the files from first hit and second hit will be the annotations for the transcriptome, and third non-hit will be model genes specific to that organism.
 
-###Preview of running code:
+####Preview of running code:
 
 ```python
 >>>python final_script.py -h
