@@ -53,6 +53,32 @@ Nevertheless, all these requirements are for the best performance, so once they 
      
 7.  Now, the files from first hit and second hit will be the annotations for the transcriptome, and third non-hit will be model genes specific to that organism.
 
+Preview of running code:
+
+```python
+>>>python final_script.py -h
+usage: final_script.py [-h]
+                       input_file_to_creat_database query_file
+                       uniquehit_model_organism no_hit_model_organism
+
+positional arguments:
+  input_file_to_creat_database
+                        Give the file path of the file you need to make
+                        database
+  query_file            Give the fasta query file you want to blast with
+                        database
+  uniquehit_model_organism
+                        Give the name of uniquehit output file
+  no_hit_model_organism
+                        Give the name of uniquehit output file
+
+optional arguments:
+  -h, --help            show this help message and exit
+ 
+>>>python ar_sub.py drs.fasta faw.fasta uniqhit nohit.fasta
+```
+
+
 ##References 
 1.	[https://en.wikipedia.org/wiki/RNA-Seq](https://en.wikipedia.org/wiki/RNA-Seq)
 
