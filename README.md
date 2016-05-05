@@ -63,7 +63,7 @@ usage: ar_sub.py [-h]
 
 positional arguments:
   input_file_to_creat_database
-                        Give the file path of the file you need to make
+                        Give the name of the file you need to make
                         database
   query_file            Give the fasta query file you want to blast with
                         database
@@ -84,6 +84,10 @@ Legend:
     faw.fasta = query_file
     uniqhit = uniquehit_model_organism
     nohit.fasta = no_hit_model_organism
+
+######Screenshot of the folder containing all files created after running first BLAST:
+![screenshot after BLAST](images/screenshot_of_output_of_first_blast.jpg)
+
 
 
 ##References 
