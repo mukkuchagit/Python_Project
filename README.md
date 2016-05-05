@@ -56,8 +56,8 @@ Nevertheless, all these requirements are for the best performance, so once they 
 ####Preview of running code:
 
 ```python
->>>python final_script.py -h
-usage: final_script.py [-h]
+>>>python ar_sub.py -h
+usage: ar_sub.py [-h]
                        input_file_to_creat_database query_file
                        uniquehit_model_organism no_hit_model_organism
 
@@ -79,10 +79,15 @@ optional arguments:
 ```
 Legend:
 ar_sub.py = python script file 
+
 drs.fasta = input_file_to_creat_database
+
 faw.fasta = query_file
+
 uniqhit = uniquehit_model_organism
+
 nohit.fasta = no_hit_model_organism
+
 
 ##References 
 1.	[https://en.wikipedia.org/wiki/RNA-Seq](https://en.wikipedia.org/wiki/RNA-Seq)
