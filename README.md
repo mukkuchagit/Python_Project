@@ -4,7 +4,7 @@
 It is very useful to know about the presence and level of gene expression in any biological sample at certain stages and tissue type. Modern high-throughput RNA sequencing (RNA-seq) has enabled us to achieve this task very well. Through RNA-seq it has been easier to look at cell's(or organism's) entire transcriptome. It has also enabled us to study about alternative gene spliced transcripts, post-transcriptional modifications, gene fusion, mutations/SNPs and changes in gene expression [(wikipedia link)](https://en.wikipedia.org/wiki/RNA-Seq ). Another very important field where RNA-seq is used intensively is gene annotation or de-novo predictions [(Zhen et. al. 2011)](http://bmcgenomics.biomedcentral.com/articles/10.1186/1471-2164-12-540).Gene annotation is carried out after transcriptome is assembled from the raw reads of RNA sequencing.
 Once we assemble transcriptome we will get contigs. These contigs will be input for annotation, which we do in NCBI’s BLAST (Basic Local Alignment Search Tool) (Figure 1). Genes that match to the closely related model organism is considered as homologous and that do not match with any organisms in database are classified as model genes specific to that organism [(Koonin et al., 2003)](http://www.ncbi.nlm.nih.gov/books/NBK20255/).
 ![figure 1](images/project_overview1.jpg)
-Fig.1. Workflow of RNAseq data analysis. The figure focuses on annotation part using BLAST. Red window highlights the area of the workflow covered by AR-SUB program. The ultimate output will be final annotation file for the assembled contigs.
+Figure 1: Workflow of RNAseq data analysis. The figure focuses on annotation part using BLAST. Red window highlight the area of the workflow covered by AR-SUB program. The ultimate output will be final annotated file for the assembled contigs.
 
 ##What does AR-SUB do :question:
 AR-SUB will align the assembled transcriptome fragments to the already annotated sequences available in NCBI database of various organisms. Usually, the gene annotation is done by running blast one querry at a time manually in NCBI web page or doing it in server and removing multiple hits in Microsoft excel manually. So, it is hugely time consuming and error prone as well (as we do it manually). with AR-SUB, it will be just three easy steps to get annotation of all the assembled transcriptome of any organism (Figure 2).
@@ -22,7 +22,6 @@ As AR-SUB was created in Linux operating system and high performance computing (
 6.	You need to run the program three times to get fully annotated genes from three stages (as shown in Figure 2). 
 
 Nevertheless, all these requirements are for the best performance, so once they are met it is easy to get the output. Furthermore, as the input transcriptome assembly file is generally huge, the time consumed by the program to run will also be accordingly higher.
-
 
 ##How to get started  :+1:
 
