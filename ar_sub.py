@@ -97,7 +97,6 @@ def main():
                        "name of the file you need to make database")
     parse.add_argument("query_file", help="Give the fasta query file" +
                        " you want to blast with database")
-        #I thought it will be easier to give a file than a messy list.
     parse.add_argument("uniquehit_model_organism", help="Give the name of " +
                        "uniquehit output file")
     parse.add_argument("no_hit_model_organism", help="Give the name of " +
